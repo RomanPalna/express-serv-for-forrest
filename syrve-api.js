@@ -1,8 +1,7 @@
 // import axios from "axios";
 const axios = require("axios");
 
-const BASE_URL =
-  "https://cors-anywhere.herokuapp.com/https://api-eu.syrve.live";
+const BASE_URL = "https://api-eu.syrve.live";
 
 const params = {
   apiLogin: "ec7d99ca-998",
