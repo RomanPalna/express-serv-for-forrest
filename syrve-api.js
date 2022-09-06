@@ -1,7 +1,7 @@
 // import axios from "axios";
 const axios = require("axios");
 
-const BASE_URL = "https://api-eu.iiko.services";
+const BASE_URL = "https://api-eu.syrve.live";
 
 const params = {
   apiLogin: "ec7d99ca-998",
