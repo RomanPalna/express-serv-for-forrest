@@ -9,7 +9,10 @@ const params = {
 
 const client = axios.create({
   baseURL: BASE_URL,
-  headers: { "Content-type": "application/json" },
+  headers: {
+    "Content-type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+  },
 });
 
 async function getMenu() {
