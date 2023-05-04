@@ -2,8 +2,8 @@ const express = require("express");
 const getMenu = require("./syrve-api");
 
 const app = express();
-const PORT = process.env.PORT || 8080;
-// kjsdgfjhsdbfsdHKBfskdJn
+const PORT = process.env.PORT || 8081;
+console.log(getMenu)
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Credentials", true);
@@ -14,6 +14,8 @@ app.use(function (req, res, next) {
   );
   next();
 });
+
+//restatrt
 
 app.use(async function (request, response) {
   response.send(await getMenu);
