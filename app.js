@@ -15,8 +15,6 @@ app.use(function (req, res, next) {
   next();
 });
 
-//restatrt
-
 app.use(async function (request, response) {
   response.send(await getMenu);
 });
